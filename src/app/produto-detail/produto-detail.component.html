@@ -1,0 +1,22 @@
+<div *ngIf="produto">
+
+    <h2>{{produto.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{produto.id}}</div>
+    <div>
+      <label for="produto-name">Produto name: </label>
+      <input id="produto-name" [(ngModel)]="produto.name" placeholder="name">
+    </div>
+    <div>
+        <label for="produto-preco">Produto preco: </label>
+        <input id="produto-preco" [(ngModel)]="produto.preco" placeholder="preco">
+    </div>
+    <div>
+        <label for="produto-codigo">Produto codigo: </label>
+        <input id="produto-codigo" [(ngModel)]="produto.codigo" placeholder="codigo">
+    </div>
+    <div>
+        <label for="produto-cor">Produto cor: </label>
+        <input id="produto-cor" [(ngModel)]="produto.cor" placeholder="cor">
+    </div>
+  
+  </div>

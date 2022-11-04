@@ -8,6 +8,7 @@
         <td>preço</td>
         <td>codigo</td>
         <td>cor</td>
+        <td>editar</td>
     </tr>
     <tr *ngFor="let produto of produtos">
         <td>{{produto.id}}</td>
@@ -15,5 +16,9 @@
         <td>{{produto.preco}}</td>
         <td>{{produto.codigo}}</td>
         <td>{{produto.cor}}</td>
+        <td><button type="button" (click)="onSelect(produto)">Editar</button></td>
     </tr>
 </table>
+
+
+<app-produto-detail [produto]="selectedProduto"></app-produto-detail>
