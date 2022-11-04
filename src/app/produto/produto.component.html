@@ -9,11 +9,11 @@
         <td>codigo</td>
         <td>cor</td>
     </tr>
-    <tr>
-        <td>id do produto</td>
-        <td>nome do produto</td>
-        <td>preço do produto</td>
-        <td>codigo do produto</td>
-        <td>cor do produto</td>
+    <tr *ngFor="let produto of produtos">
+        <td>{{produto.id}}</td>
+        <td>{{produto.name}}</td>
+        <td>{{produto.preco}}</td>
+        <td>{{produto.codigo}}</td>
+        <td>{{produto.cor}}</td>
     </tr>
 </table>
