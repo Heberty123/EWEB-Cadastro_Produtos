@@ -8,11 +8,15 @@ import { Produto } from '../produto';
 })
 export class ProdutoDetailComponent implements OnInit {
 
-  @Input() produto?: Produto;
+  @Input() produto?: Produto | null;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  save(): void{
+    this.produto = null
   }
 
 }

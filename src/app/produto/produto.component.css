@@ -1,0 +1,43 @@
+.table-class{
+    background-color: #41729F;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    height: 55vh;
+    margin: auto auto;
+}
+
+.head-table{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #41729F;
+    opacity: 1.7;
+}
+
+.body-table{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0 5px;
+    background-color: #60A3D9;
+    opacity: 1.7;
+}
+
+.button-edit{
+    background-color: #BFD7ED;
+    border: 0px;
+    border-radius: 4px;
+    width: 50%;
+    height: 70%;
+    transition: 0.3s;
+}
+
+.button-edit:hover{
+    background-color: #85a1bb;
+    transition: 0.3s;
+}
+
+.button-clicked{
+    background-color: #85a1bb;
+    transition: 0.3s;
+}
